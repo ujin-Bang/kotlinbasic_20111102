@@ -41,5 +41,12 @@ class MainActivity : AppCompatActivity() {
 //            2. 텍스트뷰에 알아낸 내용을 세팅. => 메모해둔 내용을 => 텍스트뷰의 text 속성에 대입
             txtCopyResult.text = inputContent
         }
+
+        btncontentToast.setOnClickListener {
+            val inputContent =edtContent.text.toString()
+
+            Toast.makeText(this, inputContent, Toast.LENGTH_SHORT).show()
+
+        }
     }
 }
