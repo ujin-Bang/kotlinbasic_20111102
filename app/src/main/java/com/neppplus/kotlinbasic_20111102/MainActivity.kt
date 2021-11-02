@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("메인화면","로그찍기 버튼이 눌림")
             Log.e("메인화면","Log.e로 찍어보기")
 
+
         }
 
         btnToast.setOnClickListener {
@@ -28,6 +29,10 @@ class MainActivity : AppCompatActivity() {
 //            토스트 띄우기
             Toast.makeText(this, "토스트 버튼이 눌렸습니다.", Toast.LENGTH_SHORT).show()
 
+        }
+        btnToast2.setOnClickListener {
+
+            Toast.makeText(this,"두번째 버튼이 눌렸습니다", Toast.LENGTH_SHORT).show()
         }
     }
 }
